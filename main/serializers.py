@@ -5,7 +5,7 @@ from .models import Location, Episode, Character
 class LocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Location
-        fields = ['id', 'name', 'world', 'description', 'image']
+        fields = ['id', 'name', 'world', 'description', 'image', 'author']
 
 
 class CharacterSerializer(serializers.ModelSerializer):
